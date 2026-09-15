@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Campus Food Menu</title>
+    <style>
+        body {
+            margin: 2rem;
+            font-family: sans-serif;
+        }
+
+        .toolbar {
+            margin-bottom: 1rem;
+        }
+
+        input, button {
+            font: inherit;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>Campus Food Menu</h1>
 
-    <button onclick="loadAllMeals()">Load All Meals</button>
+    <div class="toolbar">
+        <button onclick="loadAllMeals()">Load All Meals</button>
 
-    <form id="searchForm">
-        <input type="text" id="searchInput" placeholder="Search by ID">
-        <button type="submit">Search</button>
-    </form>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search by ID">
+            <button type="submit">Search</button>
+        </form>
+    </div>
 
     <table id="mealTable">
         <thead>
